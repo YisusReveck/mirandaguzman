@@ -1,0 +1,170 @@
+a {
+	text-decoration: none;
+}
+
+body {
+	margin: 0;
+	background-color: #15202B;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+}
+
+#photo {
+	border: 4px #FF1155 solid;
+	border-radius: 50%;
+	height: 300px;
+	width: 300px;
+	margin: 30px 0 15px 0;
+}
+
+#name {
+	font-variant: small-caps;
+}
+
+h1 {
+	font-family: "Cormorant";
+	text-align: center;
+	font-size: 2.4em;
+	font-weight: 400;
+	color: #FF1155;
+	margin: 0 0 10px 0;
+}
+
+h2 {
+	font-family: "Cormorant";
+	text-align: center;
+	font-size: 1.8em;
+	font-weight: 100;
+	color: #DDDDDD;
+	text-decoration: underline;
+	text-decoration-thickness: from-font;
+	margin-bottom: 20px;
+}
+
+h2:before, h2:after {
+	content: "\00a0\00a0";
+}
+
+.social-media {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.logo img {
+	margin-bottom: 5px;
+	text-align: center;
+	margin-right: 10px;
+	margin-left: 10px;
+	max-height: 32px;
+	filter: drop-shadow(2px 3px 2px black);
+}
+
+.projects-gallery {
+	text-align: center;
+	width: 517px;
+	display: grid;
+	grid-template-columns: repeat(2,261px);
+	grid-template-rows: repeat(2,230px);
+	grid-column-gap: 10px;
+	grid-row-gap: 30px;
+}
+
+.card-img img {
+	width: 256px;
+	height: 144px;
+	border-radius: 4%;
+	margin-bottom: 10px;
+}
+
+.card-img:hover {
+	filter: brightness(1.2);
+}
+
+.card-text {
+	margin: 0 12px 0 12px;
+	color: #DFF8EB;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	font-family: "Segoe UI";
+	font-size: 1em;
+	font-weight: 100;
+}
+
+.timespan {
+	font-family: "Segoe UI";
+	font-size: 0.7em;
+	margin-top: 5px;
+	margin-right: 20px;
+	color: #BBBBBB;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+}
+
+.proj-title {
+	font-size: 1.2em;
+	font-weight: 500;
+	font-family: "Segoe UI";
+	color: #FF1155;
+	margin-right: 5px;
+	display: inline-block;
+}
+
+.proj-company {
+	font-size: 1.1em;
+	font-weight: 200;
+	font-family: sans-serif;
+	color: #FF1155;
+	display: inline-block;
+}
+
+.text {
+	font-family: "Segoe UI";
+	font-size: 1em;
+	font-weight: 200;
+	color: #DFF8EB;
+	margin: 0 15px 0 0;
+	margin-right: 5px;
+	display: inline-block;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.grid {
+	width: 650px;
+	display: grid;
+	grid-template-columns: 80px auto;
+	grid-template-rows: 30px auto;
+	margin-bottom: 10px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 800px) {
+	.projects-gallery {
+		width: 261px;
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: repeat(4, 230px);
+		grid-row-gap: 30px;
+	}
+	.grid {
+		width: 98vw;
+	}
+}
