@@ -156,7 +156,7 @@ h2:before, h2:after {
     display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 300px) {
 	.projects-gallery {
 		width: 261px;
 		display: grid;
